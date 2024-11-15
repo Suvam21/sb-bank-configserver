@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: accounts
+
+  # The active profile is set to prod. This means that the configuration file
+  # accounts-prod.yml will be used to load the configuration properties.
+  profiles:
+    active:
+    - prod
+  
+  # The configuration server URL is specified in the import section. The URL is
+  # http://localhost:8071. This means that the configuration properties will be
+  # loaded from the configuration server running on port 8071. This is the approach
+  # where we declare the properties in the classpath.
+  config:
+    import:
+    - configserver:http://localhost:8071
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/accounts_prod?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: Suvam@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
