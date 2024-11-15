@@ -19,7 +19,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/accounts_test?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
-    password: Suvam@123
+    password: "{cipher}a5645d3fb4f3c05c8f34495b88e1ec51f7542a4a8ace77d456036ca1ecebf034"
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     properties:
