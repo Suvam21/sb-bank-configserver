@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: accounts
+  # application:
+  #   name: accounts
 
   # The active profile is set to prod. This means that the configuration file
   # accounts-prod.yml will be used to load the configuration properties.
