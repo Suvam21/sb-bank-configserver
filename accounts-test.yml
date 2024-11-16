@@ -17,7 +17,7 @@ spring:
   #   - configserver:http://localhost:8071
 
   datasource:
-    url: jdbc:mysql://localhost:3306/accounts_test?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/accounts_test_2?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
     username: root
     password: "{cipher}ea435b335782eed8a4f04e197bb128ac6daf376a4b9e31d1afb4ff6195cddda2"
     driver-class-name: com.mysql.cj.jdbc.Driver
